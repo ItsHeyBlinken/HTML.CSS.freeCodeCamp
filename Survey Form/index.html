@@ -1,0 +1,37 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Coding Survey</h1>
+    <p id="description">Help us improve your experience.</p>
+    <form id="survey-form">
+      <label id="name-label">Enter Your Name <input id="name" type="text" placeholder="Name" required/></label>
+      <label id="email-label">Enter Your Email <input id="email" type="email" placeholder="Email" required/></label>
+      <label id="number-label"> Enter Your Age <input id="number" pattern="[0-9]" min="13" max="120" type="number" placeholder="Age"/></label>
+      <label for="referrer">Do you Like Coding?
+      <select id="dropdown">
+        <option value="">umm...  Maybe</option>
+        <option value="1">I don't think I do</option>
+        <option value="2">yes</option>
+        <option value="3">Still YES, but ALL CAPS</option>
+      </select>
+      <legend>What's Your Favorite Language?<legend>
+      <label><input type="radio" name="C##-Java-Python" value="C#"/>C#</label>
+      <label><input type="radio" name="C##-Java-Python" value="Java"/>Java</label>
+      <label><input type="radio" name="C##-Java-Python" value="Python"/>Python</label>
+      <label><input type="radio" name="C##-Java-Python" value="Python"/>Other</label>
+      <textarea id="other" name="other" rows="2" cols="30" placeholder="If Other- Enter preference here."></textarea>
+      <legend>Which do you prefer to code on?<legend>
+      <label><input id="PC" type="checkbox" name="pc-laptop" value="PC"</input>PC</label>
+      <label><input id="laptop" type="checkbox" name="pc-laptop" value="laptop"</input>Laptop</label>
+      <legend>Any Tips or Suggestions for New Coders?</legend>
+      <textarea id="tips" name="tips" rows="4" cols="30" placeholder="Practice Practice Practice"></textarea>
+      <input id="submit" type="submit"/>
+  </form>
+  </body>
+</html>
